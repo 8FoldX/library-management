@@ -1,0 +1,20 @@
+library-bench/config/pids/
+*.rdb
+
+# Frappe generated files
+library-bench/env/
+library-bench/logs/
+library-bench/config/pids/
+library-bench/sites/*/private/
+library-bench/sites/*/public/files/
+library-bench/sites/*/site_config.json
+
+# Redis
+*.rdb
+
+# Environment
+.env
+.env.local
+
+# Node
+node_modules/
