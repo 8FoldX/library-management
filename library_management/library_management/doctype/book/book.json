@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:book_title",
+ "creation": "2026-08-29 19:07:29.702309",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "cover_image",
+  "book_title",
+  "author",
+  "column_break_ufpj",
+  "isbn",
+  "publisher",
+  "edition",
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "isbn",
+   "fieldtype": "Data",
+   "label": "ISBN"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Link",
+   "label": "Author",
+   "options": "Author",
+   "reqd": 1
+  },
+  {
+   "fieldname": "publisher",
+   "fieldtype": "Link",
+   "label": "Publisher",
+   "options": "Publisher",
+   "reqd": 1
+  },
+  {
+   "fieldname": "edition",
+   "fieldtype": "Select",
+   "label": "Edition",
+   "options": "1st Edition\n2nd Edition\n3rd Edition\n4th Edition\n5th Edition\n6th Edition\n7th Edition\n8th Edition\n9th Edition\n10th Edition\nRevised Edition\nNew Edition\nSpecial Edition\nInternational Edition\nStudent Edition\nTeacher Edition",
+   "placeholder": "Select Edition"
+  },
+  {
+   "fieldname": "column_break_ufpj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "book_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cover_image",
+   "fieldtype": "Attach Image",
+   "label": "Cover Image"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-10 16:05:47.962613",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Book",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

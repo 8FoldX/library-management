@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "autoname": "field:membership",
+ "creation": "2026-08-29 18:54:40.062846",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "membership",
+  "form_date",
+  "to_date",
+  "membership_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "form_date",
+   "fieldtype": "Date",
+   "label": "Form Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "membership",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Membership",
+   "options": "Add Member",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "membership_status",
+   "fieldtype": "Select",
+   "label": "Membership Status",
+   "options": "Active\nExpired\nSuspended\nCancelled",
+   "placeholder": "Select",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-08-31 14:04:42.526141",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Membership",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
