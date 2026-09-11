@@ -1,0 +1,44 @@
+# Python virtual environment
+env/
+
+# Logs
+logs/
+*.log
+
+# Site-specific configuration and secrets
+sites/*/site_config.json
+sites/*/private/
+
+# Public uploaded files
+sites/*/public/files/
+
+# Locks
+sites/*/locks/
+
+# Backups
+sites/*/private/backups/
+
+# Redis
+config/redis_*.conf
+*.pid
+
+# Cookies / secrets
+cookies.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Node modules
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
